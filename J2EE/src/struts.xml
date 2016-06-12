@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default" namespace="/">
+   <action name="login" class="abc.Main">
+   <result name="SUCCESS">/output.jsp</result>
+   <result name="input">/index.jsp</result>
+   <result name="fail">/index.jsp</result>   
+   </action>
+   
+   <action name="add" >
+   <result>/add.jsp</result>
+   </action>
+   
+   <action name="delete" >
+   <result>/delete.jsp</result>
+   </action>
+   <action name="addition" class="abc.Addition">
+   <result name="success">/output.jsp</result>
+   <result name="fail">/add.jsp</result>
+	<result name="input">/add.jsp</result>
+   </action>
+          
+	<action name="deletion" class="abc.Deletion">
+   <result name="success">/output.jsp</result>
+   <result name="fail">/delete.jsp</result>
+	<result name="input">/delete.jsp</result>
+   </action>  
+   
+   <action name="list" class="abc.Selection">
+   <result name="success">/select.jsp</result>
+   <result name="fail"></result>
+   </action>
+   
+   <action name="logout" class="abc.Logout">
+   <result name="success">/index.jsp</result>
+   </action>
+   
+   </package>
+    
+</struts>
