@@ -25,5 +25,10 @@
 <result name="fail">/insert.jsp</result>
 </action>
 
+ <action name="list" class="pkg.Selection">
+   <result name="success">/select.jsp</result>
+   <result name="fail">/output.jsp</result>
+   </action>
+   
 </package>
 </struts>

@@ -7,21 +7,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body background="color:green">
+<body>
 <s:actionerror/>
 <s:actionmessage/>
-<s:div>
 
 <s:form action="insert">
-<s:submit value="Insert Movies"></s:submit>
+<s:submit value="Insert Movies"></s:submit><br>
 </s:form>
-</s:div>
 
-<s:div>
-<s:form action="logout">
-<s:submit value=" LOG OUT "></s:submit>
+<s:form action="list">
+<s:submit value="List of Movie Details"></s:submit><br>
 </s:form>
-</s:div>
+
+<s:form action="logout">
+<s:submit value=" LOG OUT "></s:submit><br>
+</s:form>
 
 </body>
 </html>

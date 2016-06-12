@@ -3,7 +3,7 @@ package pkg;
 public class addPojo {
 
 	
-	String id, mname, dType, date;
+	String id, mname, dType, rdate;
 
 	public String getId() {
 		return id;
@@ -30,11 +30,11 @@ public class addPojo {
 	}
 
 	public String getDate() {
-		return date;
+		return rdate;
 	}
 
-	public void setDate(String date) {
-		this.date = date;
+	public void setDate(String rdate) {
+		this.rdate = rdate;
 	}
 	
 	
