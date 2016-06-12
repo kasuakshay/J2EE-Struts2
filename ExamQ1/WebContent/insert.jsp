@@ -13,12 +13,17 @@
 
 <s:form action="finalinsert">
 <br>
-<s:textfield name="id: " label="Movie ID"></s:textfield>
+<s:textfield name="id" label="Movie ID"></s:textfield>
 <s:textfield name="mname" label="Name of the Movie: "></s:textfield>
-<s:select name="dType: " list="#{'CD':'CD','DVD':'DVD'}" label="DISC TYPE"></s:select>
+<s:select name="dType" list="#{'CD':'CD','DVD':'DVD'}" label="DISC TYPE"></s:select>
 <s:datetextfield name="date" format="dd/mm/yyyy" label="Release Date: "></s:datetextfield>
 <br><br>
 <s:submit value="INSERT NOW"/>
 </s:form>
+<s:div>
+<s:form action="logout">
+<s:submit value=" LOG OUT "></s:submit>
+</s:form>
+</s:div>
 </body>
 </html>

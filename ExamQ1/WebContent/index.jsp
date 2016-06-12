@@ -12,6 +12,7 @@
 
 <s:actionerror/>
 <s:actionmessage/>
+<% session.invalidate(); %>
 
 <s:form action="login">
 <s:textfield name="uname" label="Enter Username: " requiredLabel="true"></s:textfield>

@@ -24,6 +24,5 @@
 <result type="input">/insert.jsp</result>
 <result type="fail">/insert.jsp</result>
 </action>
-
 </package>
 </struts>

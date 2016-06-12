@@ -1,0 +1,35 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+ <validators>
+<field name="id">
+ <field-validator type="requiredstring">
+ <message>ID cannot be left empty</message>
+ </field-validator>
+<field-validator type="regex">
+<param name="regex">[0-9]*</param>
+<message>Please enter numbers only</message>
+</field-validator>
+ </field>
+ 
+ <field name="mname">
+ <field-validator type="requiredstring">
+ <message>name cannot be left empty</message>
+ </field-validator>
+ </field>
+ 
+ 
+ <field name="dType">
+ <field-validator type="required">
+ <message>CD field cannot be left empty</message>
+ </field-validator>
+ </field>
+ 
+ 
+ <field name="date" >
+
+ <field-validator type="date">
+ <message>Enter a valid date</message>
+ </field-validator>
+ 
+ </field>
+ </validators>
