@@ -5,6 +5,10 @@
 <struts>
 <package name="default" extends="struts-default">
 
+<action name="insert">
+<result name="success">/insert.jsp</result>
+</action>
+
 <action name="login" class="pkg.Main">
 <result name="success">/output.jsp</result>
 <result name="fail">/index.jsp</result>
@@ -15,14 +19,11 @@
 <result name="success">/index.jsp</result>
 </action>
 
-<action name="insert">
-<result name="success">/insert.jsp</result>
+<action name="add" class="pkg.Insert">
+<result name="success">/output.jsp</result>
+<result name="input">/insert.jsp</result>
+<result name="fail">/insert.jsp</result>
 </action>
 
-<action name="finalinsert" class="pkg.Insert">
-<result type="success">/output.jsp</result>
-<result type="input">/insert.jsp</result>
-<result type="fail">/insert.jsp</result>
-</action>
 </package>
 </struts>

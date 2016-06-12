@@ -15,9 +15,9 @@
 <% session.invalidate(); %>
 
 <s:form action="login">
-<s:textfield name="uname" label="Enter Username: " requiredLabel="true"></s:textfield>
-<s:password name="pass" label="Enter password: " requiredLabel="true"/>
-<s:submit value=" Log In "></s:submit>
+<s:textfield name="uname" label="Enter Username:" requiredLabel="true"></s:textfield>
+<s:password name="pass" label="Enter password:" requiredLabel="true"></s:password>
+<s:submit value="Log In"></s:submit>
 </s:form>
 
 </body>

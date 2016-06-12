@@ -17,17 +17,6 @@
 </s:form>
 </s:div>
 
-
-<s:form action="delete">
-<s:submit value="Delete Movies"></s:submit>
-</s:form>
-
-<!-- 
-<s:form action="list">
-<s:submit value="List Movies"></s:submit>
-</s:form>
- -->
-
 <s:div>
 <s:form action="logout">
 <s:submit value=" LOG OUT "></s:submit>
