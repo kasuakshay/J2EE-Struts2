@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<package name="default" extends="struts-default">
+
+<action name="login" class="pkg.Main">
+<result name="success">/output.jsp</result>
+<result name="fail">/index.jsp</result>
+<result name="input">/index.jsp</result>
+</action>
+
+<action name="logout" class="pkg.Logout">
+<result name="success">/index.jsp</result>
+</action>
+
+<action name="insert">
+<result name="success">/insert.jsp</result>
+</action>
+
+<action name="finalinsert" class="pkg.Insert">
+<result type="success">/output.jsp</result>
+<result type="input">/insert.jsp</result>
+<result type="fail">/insert.jsp</result>
+</action>
+
+</package>
+</struts>
